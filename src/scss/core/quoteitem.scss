@@ -1,0 +1,14 @@
+.item{
+    border: 1px;
+    border-radius: 0%;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+&__character{
+    color: greenyellow;
+    margin-left: 5px;
+&__{
+    margin-right: 5px;
+}
+}
+}

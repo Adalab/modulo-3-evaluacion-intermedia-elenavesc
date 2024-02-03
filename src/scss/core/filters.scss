@@ -1,0 +1,19 @@
+.filters{
+    display: flex;
+}
+.form{
+   text-align: center;   
+&__p{
+    color:black;
+   
+}
+&__div{
+    display: flex;
+}
+}
+.input{
+    border-color: greenyellow;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
