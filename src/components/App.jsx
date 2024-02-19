@@ -11,13 +11,21 @@ function App() {
   const handleFilterTitle = (filterValue) => {
     setFilterQuote(filterValue);
   }
-  const filterQuotes = data.filter((item)=> item.quote.toLowerCase().includes((filterQuote.toLocaleLowerCase())))
+  const handleFilterCharacter = (filterValue) => {
+    setFilterCharacter(filterValue);
+  }
+  const filterQuotes = data.filter((item)=> item.quote.toLowerCase().includes((filterQuote.toLocaleLowerCase())));
+  const filterCharacter = (value) => {
+    setFilterCharacter(value);
+  }
+  
   return (
     <div className="app">
       <header>
         <h1>Frases de Friends</h1>
       </header>
       <Filters handleFilterTitle={handleFilterTitle} />
+      <FilterCharacter handleFilterCharacter={handleFilterCharacter} />
       <QuotesList filterQuotes={filterQuotes} quotes={quotes}/>
     </div>
   )
