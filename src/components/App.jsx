@@ -1,6 +1,6 @@
 import '../scss/App.scss'
 import Filters from './Filters'
-import QuoteItem from './QuoteItem'
+import FilterCharacter from './FilterCharacter';
 import quotes from '../../api.json';
 import QuotesList from './QuotesList';
 import { useState } from 'react';
@@ -25,7 +25,7 @@ function App() {
         <h1>Frases de Friends</h1>
       </header>
       <Filters handleFilterTitle={handleFilterTitle} />
-      <FilterCharacter handleFilterCharacter={handleFilterCharacter} />
+      <FilterCharacter filterCharacter={filterCharacter} handleFilterCharacter={handleFilterCharacter} />
       <QuotesList filterQuotes={filterQuotes} quotes={quotes}/>
     </div>
   )
